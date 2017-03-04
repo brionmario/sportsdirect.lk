@@ -1,0 +1,417 @@
+table#firstLBar{ /*table creates up-most navigation bar*/
+	width: 100%;
+	border: 1px solid black;
+	background-color:MidnightBlue;
+	color:Gainsboro;
+	height:5px;
+}
+
+table#NameBar{ /*table creates description bar*/
+	width: 100%;
+	background-color:Gainsboro;
+	height:80px;
+}
+
+table#Social{
+	width:8%;
+	background-color:white;
+}
+
+table#BelowSection{
+	width:30%;
+
+
+}
+
+table#logo{ /*table contains logo and title*/
+	width:85%;
+	height:5px;
+}
+
+table#cartL{
+	width:10%;
+	border-style:dotted;
+}
+
+table#sanitary{
+width:100%;
+
+}
+
+table#members{/*table in 5sec page*/
+	width:50%;
+
+}
+
+
+#nav{
+	width:1350px;
+	background-color:MidnightBlue;
+	color:Gainsboro;
+	text-align:center;
+	height: 40px;
+	font-size:15px;
+}
+
+table#SlideShow{ /*table contains slide show images*/
+	width:100%;
+	text-align:center;
+}
+
+footer{
+	background-color:MidnightBlue;
+    color:Gainsboro;
+    clear:both;
+    text-align:center;
+    padding:5px;
+	font-family: "Tahoma", Verdana, serif;
+	font-size:12px;
+}
+
+	
+a:link, a:visited {
+    background-color: MidnightBlue;
+    color: Gainsboro;
+    padding: 8px 20px;
+    text-align: center;	
+    text-decoration: none;
+    display: inline-block;
+	font-family: "Tahoma", Verdana, serif;
+}
+
+a:hover{ 
+    background-color: CadetBlue;
+}
+a:active {
+	background-color: SaddleBrown;
+}
+
+a.s:link, a.s:visited{
+	background-color: Gainsboro;
+    color: black;
+    border: 2px solid MidnightBlue;
+}
+
+a.s:hover, a.s:active {
+    background-color: Khaki;
+    color: white;
+	border: 2px solid SaddleBrown;
+}
+
+td{
+	text-align:left;
+}
+
+td.image{ /*data cell contains image in description bar*/
+	padding:5px;
+	text-align:right;
+}
+
+
+td.des{ /*data cell contains text in description bar*/
+	font-family: "Calibri(body)", Verdana, serif;
+	padding:5px;
+}
+td.cart{
+	font-family: "Rockwell", Verdana, serif;
+	text-align:right;
+	border: dotted;
+}
+
+h1.mainHeading { /*site title*/
+	font-family: "Batang", Verdana, serif;
+	font-size: 85px;
+	text-shadow: 2px 2px gold;
+	color:Black;
+}
+
+a.button{
+	size: 100px;
+}
+
+div.scrollTips{
+	background-color:Beige ;
+	width:300px;
+	height:500px;
+	overflow:scroll;
+	text-align:left;
+}
+
+div.roundB{
+	border: 2px solid #a1a1a1;
+    padding: 10px 40px; 
+    background: #dddddd;
+    width: 30px;
+    border-radius: 5000px;
+}
+
+
+
+li{
+	font-size:15px;
+	font-family:"Calibri";
+}
+
+.answers li { 
+list-style: upper-alpha; 
+} 
+
+label { 
+margin-left: 0.5em; 
+cursor: pointer; 
+} 
+
+#results { 
+background: #dddada; 
+color: 000000; 
+padding: 3px; 
+text-align: center; 
+width: 200px; 
+cursor: pointer; 
+border: 1px solid gray; 
+}
+
+#results:hover { 
+background: #3d91b8; 
+color: #ffffff; 
+padding: 3px; 
+text-align: center; 
+width: 200px; 
+cursor: pointer; 
+border: 1px solid gray; 
+} 
+
+#categorylist { 
+margin-top: 6px; 
+display: none; 
+} 
+
+#category1, #category2, #category3, #category4, #category5, #category6, #category7, #category8, #category9, #category10, #category11 { 
+display: none; 
+}
+
+#closing {
+display: none;
+font-style: italic;
+}
+	
+floating-box {
+    float: left;
+    width: 1500px;
+    height: 75opx;
+    margin: 10px;
+    border: 3px solid #73AD21;  
+}
+
+div.box { /*quiz box design*/
+    background-color: Gainsboro;
+    width: 350px;
+    padding: 25px;
+    border: 2px solid MidnightBlue;
+    margin: 5px;
+	height:50px;
+}
+
+/*click button link formatting styles*/
+a.click:link, a.click:visited {
+    background-color: Peru;
+    color: Gainsboro;
+    padding: 8px 20px;
+    text-align: center;	
+    text-decoration: none;
+    display: inline-block;
+	font-family: "Tahoma", Verdana, serif;
+}
+
+a.click:hover{ 
+    background-color: CadetBlue;
+}
+a.click:active {
+	background-color: SaddleBrown;
+}
+
+body{
+	background-image: url("");
+}
+
+h2{
+	font-family: "AR CHRISTY", AR CENA, serif;
+}
+
+h3{
+	font-family: "AR CARTER", AR CENA, serif;
+	font-size: 35px;
+}
+
+/* link buttons in our products page */
+a.bt {
+  display: inline-block;
+  padding: 100px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  height:50px;
+  width:200px;
+}
+
+.bt:hover {background-color: #3e8e41}
+
+.bt:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+td.hover2:hover{
+background-color:white;
+
+}
+td.hover3:hover{
+background-color:white;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+	width:150px;
+	height:40px;
+	color:black;
+	font-family:"Berlin Sans FB";
+	font-size:20px;
+}
+
+.cartFont{
+font-family:"Cambria";
+font-size:17px;
+}
+
+p#name{
+	font-family:"Cambria";
+	font-size:18px;
+	font-weight:bold;
+}
+
+div.wrapper{ /*health quiz question section*/
+	width:950px;
+	 height:auto;
+	 padding: 13px;
+	 margin-right:auto;
+	 margin-left:auto;
+}
+
+img.logo{ /*logo*/
+	opacity: 0.9;
+	filter: alpha(opacity=60);
+}
+
+img.logo:hover{ /*control transparency of the logo*/
+	opacity: 1.0;
+	filter: alpha(opacity=150);
+}
+
+h1.heading{ /*Main heading - 5sec page*/
+	font-size:40px;
+	font-family:"Arial";
+	text-shadow: 2px 2px #ddd;
+}
+
+h2.sub{ /*Sub heading - 5sec page*/
+	font-size:20px;
+	font-family:"Harrington";
+}
+
+th.title{ /*title heading cell in members table*/
+	width:5%;
+	font-size:20px;
+	font-family:"Calibri";
+	background-color:MidnightBlue;
+	color:white;
+}
+
+td.titled{ /*title data cell in members table*/
+	width:5%;
+	font-family:"Book Antiqua";
+	border-bottom: 1px solid #ddd;
+}
+
+th.full{ /*full name heading cell in members table*/
+	width:35%;
+	font-size:20px;
+	font-family:"Calibri";
+	background-color:MidnightBlue;
+	color:white;
+}
+
+td.full{ /*full name data cell in members table*/
+	width:35%;
+	font-family:"Book Antiqua";
+	border-bottom: 1px solid #ddd;
+}
+
+th.iit{ /*iit student id heading cell in members table*/
+	width:8%;
+	font-size:20px;
+	font-family:"Calibri";
+	background-color:MidnightBlue;
+	color:white;
+}
+
+td.iit{ /*iit student id data cell in members table*/
+	width:8%;
+	font-family:"Book Antiqua";
+	border-bottom: 1px solid #ddd;
+}
+
+td.uow{ /*uow student id data cell in members table*/
+	width:8%;
+	font-family:"Book Antiqua";
+	border-bottom: 1px solid #ddd;
+}
+
+th.uow{ /*uow student id ccell in members table*/
+	width:8%;
+	font-size:20px;
+	font-family:"Calibri";
+	background-color:MidnightBlue;
+	color:white;
+}
+
+a.arrow{ /*arrow image section*/
+    background-color: white;
+    color: white;
+}
+
+/* click here link*/
+a.click:link, a.click:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid SeaGreen ;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	height:10px;
+	font-size:12px;
+}
+
+a.click:hover, a.click:active {
+    background-color:SeaGreen ;
+    color: white;
+}
+
+.viewcart{
+font-family:"Cambria";
+font-size:18px;
+}

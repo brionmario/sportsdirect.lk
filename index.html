@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Splash</title>
+
+<link rel="stylesheet" type="text/css" href="splash page/css/splashcss.css">
+
+<!--Redirect to the home page after 5seconds-->
+<script>
+setTimeout(function(){window.location.href='home.html'},5000);
+</script>
+
+<script src="splash page/js/splash.js" type="text/javascript"></script>
+
+</head>
+
+<body onload="fadeIn()">
+
+<!--Audio Clip-->
+<audio autoplay>
+  <source src="splash page/splash.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<h1 id="welcome" >W E L C O M E &nbsp &nbsp T O</h1><br />
+<div id="sdLogo"  class="logo" align="center">
+	<img id="logoImg" src="splash page/images/logo.png" alt="logo" />
+</div>
+
+<!--Developers-->
+<div id="developers" style="position:relative;top:100px">
+  <h1 dalign="center" style="font-size:24px">DEVELOPERS</h1><hr class="lineStyle"/>
+  <div class="team" id="brion">
+      <img class="pics" src="splash page/images/brion.png" alt="brionIMG" /><br /><br />
+      <label>Brion Mario</label>
+  </div>
+  
+  <div class="team" id="tila">
+      <img class="pics" src="splash page/images/tila.png" alt="thisuraIMG" /><br /><br />
+      <label>Thisura Sagara</label>
+  </div>
+  
+  <div class="team" id="wala">
+      <img class="pics" src="splash page/images/wala.png" alt="hasithaIMG" /><br /><br />
+      <label>Hasitha Hiran</label>
+  </div>
+  
+  <div class="team" id="pipuni">
+      <img class="pics" src="splash page/images/pipuni.png" alt="pipuniIMG" /><br /><br />
+      <label>Pipuni Lakshara</label>
+  </div>
+  
+  <div class="team" id="mota">
+      <img class="pics" src="splash page/images/mota.png" alt="pavithIMG" /><br /><br />
+      <label>Pavith Buddhima</label>
+  </div>
+</div>
+</body>
+</html>
