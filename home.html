@@ -1,0 +1,351 @@
+    <?php 
+    if (!isset($_SESSION)) {
+    session_start();
+}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style>
+.userName{
+	position:relative;
+	float:right;
+	right:30px;
+	top:5px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	font-weight:500;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/loginButtons.css">
+<link rel="stylesheet" type="text/css" href="css/menubar.css">
+<!--Slider-->
+<link href="slider/js-image-slider.css" rel="stylesheet" type="text/css" />
+<script src="slider/js-image-slider.js" type="text/javascript"></script>
+
+    <!-- Sports Widget -->
+    <div id="widget" align="center">
+    <script type="text/javascript">
+    document.write('\x3Cscript type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js">\x3C/script>');
+    </script>
+    <script type="text/javascript">
+        (function() {
+            var params = {rssmikle_url: "http://www.espn.com/espn/rss/news",
+            rssmikle_frame_width: "1366",
+            rssmikle_frame_height: "60",
+            frame_height_by_article: "0",
+            rssmikle_target: "_blank",
+            rssmikle_font: "Arial, Helvetica, sans-serif",
+            rssmikle_font_size: "12",
+            rssmikle_border: "off",
+            responsive: "off",
+            rssmikle_css_url: "",
+            text_align: "center",
+            text_align2: "center",
+            corner: "off",
+            scrollbar: "off",
+            autoscroll: "on",
+            scrolldirection: "up",
+            scrollstep: "3",
+            mcspeed: "30",sort: "Off",
+            rssmikle_title: "off",
+            rssmikle_title_sentence: "",
+            rssmikle_title_link: "",
+            rssmikle_title_bgcolor: "#0066FF",
+            rssmikle_title_color: "#FFFFFF",
+            rssmikle_title_bgimage: "",
+            rssmikle_item_bgcolor: "#FFFFFF",
+            rssmikle_item_bgimage: "",
+            rssmikle_item_title_length: "200",
+            rssmikle_item_title_color: "#0066FF",
+            rssmikle_item_border_bottom: "off",
+            rssmikle_item_description: "on",
+            item_link: "off",
+            rssmikle_item_description_length: "150",
+            rssmikle_item_description_color: "#666666",
+            rssmikle_item_date: "gl1",
+            rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M %p",
+            item_description_style: "text+tn",
+            item_thumbnail: "full",
+            item_thumbnail_selection: "auto",
+            article_num: "15",
+            rssmikle_item_podcast: "off",
+            keyword_inc: "",keyword_exc: ""};
+            
+            feedwind_show_widget_iframe(params);})();
+            
+            </script>
+      <hr class="lineStyle" />
+    </div>
+
+	<title>Home</title>
+    
+    <!--Displays the username-->
+    <span class="userName"><label>
+    <?php 
+   
+	if(!empty($_SESSION['userlog'])){
+ 	$uName = $_SESSION["userlog"] ; 
+ 	if(isset($_SESSION["userlog"])){
+    echo "Welcome&nbsp;";
+    echo "{$uName}";
+    }
+    }
+ ?>
+ </label></span>
+    
+	<center><img src="images/mainlogo.png" alt="SportsDirect Logo" /></center>
+    
+    <a href="shopping cart/view_cart.php"><input type="button" value="" class="cart"></a>
+	<a href="signup.php"><input type="submit" value="Sign Up" class="signup" /></a>
+	<a href="signin.php"><input type="submit" value="Login" class="login" /></a>
+    <a href="logout.php"><input type="submit" value="Logout" class="logout" /></a>
+    
+    <style>
+		div.products{
+			border: 1px solid rgba(228, 228, 228, .5);
+    		border-radius: 5px;
+		}
+		div.products:hover{
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		#footerDiv{
+			position:relative;
+			top:830px;
+		}
+		.socialDiv{
+			text-align:center;
+			position:relative;
+			left:550px;
+			bottom:35px;
+		}
+		.footerAbout{
+			position:relative;
+			bottom:30px;
+			left:10px;
+			width:500px;
+		}
+	</style>
+    
+</head>
+
+<body>
+
+<!--Navigation Menu -->
+<div id="menuDiv">
+<br />
+<nav align="center">
+      <ul>
+          <li class="menuText"><a href="home.html">HOME</a></li>
+          <!--Products start here-->
+          <li class="menuText"><a>PRODUCTS</a>
+              <ul>
+                  <li class="menuSubText"><a href="shopping cart/cricket.php">CRICKET</a>
+                      <ul>
+                          <li><a href="shopping cart/cricket.php">Gear</a></li>
+                          <li><a href="shopping cart/cricket.php">Clothes</a></li>
+                          
+                      </ul> 
+                  </li>                   
+                  <li class="menuSubText"><a href="shopping cart/rugby.php">RUGBY</a>
+                      <ul>
+                          <li><a href="shopping cart/rugby.php">Gear</a></li>
+                          <li><a href="shopping cart/rugby.php">Clothes</a></li>
+                          
+                      </ul> 
+                  </li>               
+                  <li class="menuSubText"><a href="shopping cart/football.php">FOOTBALL</a>
+                       <ul>
+                          <li><a href="shopping cart/football.php">Gear</a></li>
+                          <li><a href="shopping cart/football.php">Clothes</a></li>
+                          
+                      </ul> 
+                  </li>
+                  <li class="menuSubText"><a href="shopping cart/badminton.php">BADMINTON</a>
+                  	  <ul>
+                          <li><a href="shopping cart/badminton.php">Gear</a></li>
+                          <li><a href="shopping cart/badminton.php">Clothes</a></li>
+                          
+                      </ul>
+                  </li>
+                  <li class="menuSubText"><a href="shopping cart/nutrition.php">NUTRITION</a></li>
+                  <li class="menuSubText"><a href="shopping cart/souvenirs.php">SOUVENIRS</a></li>
+              </ul>
+          </li>
+          <!--Products ends here-->
+          <li class="menuText"><a href="quiz page/quiz.php">QUIZ</a></li>
+          <li class="menuText"><a href="team page/ourteam.php">OUR TEAM</a></li>
+          <li class="menuText"><a href="testimonials page/testimonials.php">TESTIMONIALS</a></li>
+          <li class="menuText"><a href="feedback page/form.php">FEEDBACK</a></li>
+          <li class="menuText"><a href="location page/location.php">CONTACT US</a></li>
+          
+      </ul>
+  </nav>
+</div>
+<!-- Eng of the Navigation Menu -->
+<br />
+<br />
+
+<!--Slider-->
+<div id="sliderFrame">
+        <div id="ribbon"></div>
+        <div id="slider">
+            <a href="" target="_blank">
+                <img src="images/slider-images/image-slider-1.jpg" alt="Welcome to SportsDirect.lk" />
+            </a>
+            <img src="images/slider-images/image-slider-2.jpg" alt="Adidas F50 adizero Messi Edition only 9500 LKR" />
+            <img src="images/slider-images/image-slider-3.jpg" alt="Carlton Vapour Trail Series From 24500 LKR onwards" />
+            <img src="images/slider-images/image-slider-4.jpg" alt="Genuine Nike products available now!" />
+            <img src="images/slider-images/image-slider-5.jpg" alt="Our Official partner, Optimum Nutrition"/>
+        </div>
+        <div id="htmlcaption" style="display: none;">
+            <em>HTML</em> caption. Link to <a href="http://www.google.com/">Google</a>.
+        </div>
+    </div>
+<!--End of Slider-->
+
+<br /><br />
+<div id"featuredDiv">
+    <h3 align="center">FEATURED PRODUCTS</h3>
+    <br />
+    <!--Product List-->
+    <!--Row 1-->
+    <div class="products" style="position: absolute; width: 200px; left: 120px; padding: 10px; text-align: center;">
+      <img class="productImg" src="images/Featured/kokaburra.png" alt="Kokaburra Onyx" /><br />
+      <a class="pLink" href="shopping cart/cricket.php">Kookaburra Onyx Prodigy 60 Cricket Bat</a><br /><br>
+      <label class="pPrice">17,050 LKR</label>
+    </div>
+    
+    <div class="products" style="position:absolute;width:200px;left:420px; padding: 10px; text-align: center;">
+      <img class="productImg" src="images/Featured/carlton.png" alt="CARLTON Aeroblade" /><br />
+      <a class="pLink" href="shopping cart/badminton.php">CARLTON Aeroblade 5000 Badminton Racket</a><br /><br>
+      <label class="pPrice">5200 LKR</label>
+  </div>
+    
+    <div class="products" style="position:absolute;width:200px;left:720px; padding: 10px; text-align: center;">
+        <img class="productImg" src="images/Featured/boot.png" alt="Adidas Boot" /><br />
+        <a class="pLink" href="shopping cart/football.php">Adidas F50 adiZero - Messi Edition</a><br /><br>
+        <label class="pPrice">18,999 LKR</label>
+    </div>
+    
+    <div class="products" style="position:absolute;width:200px;right:120px; padding: 10px; text-align: center;">
+        <img class="productImg" src="images/Featured/nikejersey.png" alt="Nike Jersey" /><br />
+        <a class="pLink" href="shopping cart/football.php">Nike Teamwear Long Sleeve Jersey</a><br /><br>
+        <label class="pPrice">4900 LKR</label>
+    </div>
+    <!--Row 2-->
+    <div class="products" style="position:absolute;width:200px;left:120px;top:1090px; padding: 10px; text-align: center;">
+        <img class="productImg" src="images/Featured/whey.png" alt="GS Whey" /><br />
+        <a class="pLink" href="shopping cart/nutrition.php">Gold Standard Whey Double Rich Chocolate 5lb</a><br /><br>
+        <label class="pPrice">8500 LKR</label>
+    </div>
+    
+    <div class="products" style="position:absolute;width:200px;left:420px;top:1090px; padding: 10px; text-align: center;">
+        <img class="productImg" src="images/Featured/rugbyball.png" alt="Gilbert Rugby Ball" /><br />
+        <a class="pLink" href="shopping cart/rugby.php">Gilbert Zenon Trainer Rugby Ball - Size 5</a><br /><br>
+        <label class="pPrice">2320 LKR</label>
+    </div>
+    
+    <div class="products" style="position:absolute;width:200px;left:720px;top:1090px; padding: 10px; text-align: center;">
+        <img class="productImg" src="images/Featured/soccerball.png" alt="Soccer Ball" /><br />
+        <a class="pLink" href="shopping cart/football.php">Under Armour Desafio 395 Soccer Ball</a><br /><br>
+        <label class="pPrice">3180 LKR</label>
+    </div>
+    
+    <div class="products" style="position:absolute;width:200px;right:120px;top:1090px; padding: 10px; text-align: center;">
+        <img class="productImg" src="images/Featured/shuttlecock.png" alt="Shuttlecock" /><br />
+        <a class="pLink" href="shopping cart/badminton.php">Senston A7 12xTraining Sport White Feather Shuttlecocks</a><br /><br>
+        <label class="pPrice">5250 LKR</label>
+    </div>
+</div>
+<br />
+<br />
+
+<!--Slider-->
+<div class="partners" >
+<h3 style="position:relative;left:600px;">OUR PARTNERS</h3>
+<hr class="lineStyle" style="position:relative;width:1366px;opacity:0.4"/>
+<marquee style="position:absolute;width:1366px;" scrollamount="4">
+<img src="images/Marquee/nike.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/adidas.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/carlton.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/jordons.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/kokaburra.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/yonex.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/puma.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/reebok.png"alt="" style="padding-right:30px">
+<img src="images/Marquee/optimum.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/wilson.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/arnold.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/gilbert.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/nike.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/adidas.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/carlton.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/jordons.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/kokaburra.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/yonex.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/puma.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/reebok.png"alt="" style="padding-right:30px">
+<img src="images/Marquee/optimum.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/wilson.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/arnold.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/gilbert.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/nike.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/adidas.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/carlton.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/jordons.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/kokaburra.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/yonex.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/puma.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/reebok.png"alt="" style="padding-right:30px">
+<img src="images/Marquee/optimum.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/wilson.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/arnold.png" alt="" style="padding-right:30px">
+<img src="images/Marquee/gilbert.png" alt="" style="padding-right:30px">
+</marquee>
+</div>
+
+</body>
+
+<div id="footerDiv">
+	<footer class="footer">
+	<hr style="height:10px;border: 0;box-shadow: 0 15px 10px -15px #000 inset;" />
+    <br />
+    <div style="position:relative;z-index:999">
+    	<center><label style="font-size:13px;color:#999;font-weight:bold">Jump To : </label>
+    	<a href="location page/location.php" class="footerLinks">Location | </a>
+    	<a href="sitemap page/sitemap.php" class="footerLinks">Sitemap | </a>
+    	<a href="poll page/votecheck1.php" class="footerLinks">Weekly Poll </a></center>
+    <center>
+    <label style="font-size:11px;color:#444;font-weight:bold">© Copyright 2016 Team Scorpion | All Rights Reserved</label>
+    </center>
+    </div>
+    
+    <div class="socialDiv">
+    	<label style="font-size:16px;color:#999;font-weight:500;">Connect With Us!</label><br />
+        <label style="font-size:12px;color:#666;">Follow us for frequent updates!</label><br />
+        
+        <a href="https://www.facebook.com/sportdirectlk/" target="_blank">
+        <img class="socialIco" src="images/Social/facebook.png" alt="fb" /></a>
+        <a href="https://twitter.com/sportsdirect_lk" target="_blank">
+        <img class="socialIco" src="images/Social/twitter.png" alt="twitter" /></a>
+        <a href="https://plus.google.com/u/5/118251647785443544153" target="_blank">
+        <img class="socialIco" src="images/Social/g+.png" alt="g+" /></a>
+    </div>
+    
+    <div class="footerAbout">
+    	<img src="images/teamLogo.png" />
+        <div id="fAboutText" style="position:absolute;left:150px;bottom:0px">
+        	<label style="font-size:13px;font-weight:400;color:#999">About Us:</label><br />
+        	<label style="color:#666">We love our job and we are good at it.<br /> Come to us with your idea.<br />We will
+        	make dream a reality.</label><br />
+        	<a href="team page/ourteam.php"  style="font-weight:500;color:#999;text-decoration:none">Meet Our Team</a>
+        </div>
+    </div>
+    
+	</footer>
+</div>
+</html>

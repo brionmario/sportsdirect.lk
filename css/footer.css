@@ -1,0 +1,21 @@
+.footerExternal{
+	width:1366px;
+	background:#222;
+	font-family:Roboto;
+}
+.footerLinks{
+	text-decoration:none;
+	color:#666;
+}
+.footerLinks:hover{
+	text-decoration:underline;
+	color:#CCC;
+}
+.socialIco{
+	
+	padding-top:10px;
+	padding-left:10px;
+}
+.socialIco:hover{
+	opacity:.5;
+}

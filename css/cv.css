@@ -1,0 +1,42 @@
+body{
+	position:relative;
+	overflow-x:hidden;
+	overflow-y:scroll;
+
+}
+
+.cv{
+	border-radius:10px;
+	position:relative;
+	left:110px;
+	top:20px;
+	border: #CCC 1px solid;
+	padding:10px 10px 10px 30px;
+	max-width:670px;
+}
+.profile{
+	border-radius:10px;
+	position:absolute;
+	left:900px;
+	top:192px;
+	border: #CCC 1px solid;
+	padding:10px 10px 10px 10px;
+	max-width:220px;
+	text-align:center;
+	
+}
+.image img{
+	border-radius:10px;
+	width:200px;
+}
+.socialIco img{
+	position:relative;
+	width:180px;
+	right:10px;
+	bottom:10px;
+	padding-top:10px;
+	padding-left:10px;
+}
+.socialIco:hover{
+	opacity:.5;
+}

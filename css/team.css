@@ -1,0 +1,29 @@
+body{
+	position:relative;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	text-align:center;
+}
+.picture img{
+	border-radius:50%;
+}
+.profile{
+	display:inline-block;
+	text-align:center;
+	padding:20px 40px 20px 40px;
+	max-width:250px;
+}
+.profile a{
+	color:#000;
+}
+.profile a:hover{
+	color:#03F;
+}
+.profile a:after{
+	color:#000;
+	text-decoration:none;
+}
+footer{
+	position:relative;
+	text-align:left;
+}

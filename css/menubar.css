@@ -1,0 +1,82 @@
+nav ul {
+	background: #efefef; 
+	background: linear-gradient(top, #666666 0%, #333333 100%);  
+	background: -moz-linear-gradient(top, #666666 0%, #333333 100%); 
+	background: -webkit-linear-gradient(top, #666666 0%,#333333 100%); 
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+	padding: 0 20px;
+	border-radius: 10px;  
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	z-index:999;
+}
+nav ul:after {
+	content: ""; clear: both; display: block;
+}
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
+nav ul li {
+	float: left;
+}
+nav ul li:hover {
+	background: #4b545f;
+	background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+	background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+	background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+}
+nav ul li:hover a {
+	color: #fff;
+}
+	
+nav ul li a {
+	display: block; padding: 12px 30px;
+	color: #FFFFFF; text-decoration: none;
+}
+nav ul ul {
+	background: #5f6975; border-radius: 0px; padding: 0;
+	position: absolute; top: 100%;
+}
+
+/*Sports Categories*/
+nav ul ul li {
+	
+	float: left; 
+	border-top: 1px solid #6b727c;
+	border-bottom: 1px solid #575f6a;
+	position: relative;
+}
+nav ul ul li a {
+	padding: 15px 44px;
+	color: #fff;
+}	
+nav ul ul li a:hover {
+	background: #4b545f;
+}
+
+/*Sports sub categories*/
+nav ul ul ul {
+	
+	position: absolute; 
+	top:42px; 
+	
+	
+}
+
+/*Menu Text style*/
+.menuText{
+    font-weight: bold;
+	font-size: 14px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+/*Menu Sub Text style*/
+.menuSubText{
+    font-weight: bold;
+	font-size: 10px;
+	font-family:Arial, Helvetica, sans-serif;
+}
