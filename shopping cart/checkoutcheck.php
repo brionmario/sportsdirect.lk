@@ -1,0 +1,9 @@
+<?php 
+session_start();
+ if(isset($_SESSION["userlog"]))
+ {
+	 include_once("thanks.php");
+}else{
+	include_once("pleaselogin.php");
+}
+?>
